@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background: white;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        body {
+            background: #1A1A1A;
+        }
+
+        .logo {
+            background-image: url(Logo\ SUNUGAL\ SPORT2_Plan\ de\ travail\ 1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100px;
+            height: 70px;
+        }
+
+        .menu {
+            width: 450px;
+            height: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .achref {
+            text-decoration: none;
+            color: #1A1A1A;
+        }
+
+        .recmenu {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1190px;
+            width: 90%;
+            margin: auto;
+            align-items: center;
+        }
+
+        .BB {
+            margin-top: 40px;
+            max-width: 1190px;
+            width: 90%;
+            margin: auto;
+
+        }
+
+        .A1 {
+            border: 2px solid #1A1A1A;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 85px;
+            background-image: url(17af2ad0e790dd3c329548aec2449b75.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+        }
+
+        .A3 {
+            width: 100%;
+            height: 100%;
+            border: 2px solid #1A1A1A;
+            margin: 0 auto;
+            margin-top: 85px;
+            background-image: url(a57e2b3c71863e2bd09cd277fc050097.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+        }
+
+        .A4 {
+            width: 100%;
+            height: 100%;
+            border: 2px solid #1A1A1A;
+            margin: 0 auto;
+            margin-top: 85px;
+            background-image: url(9e2d4ba6e6280e81894e7ea17a7a3007.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+        }
+
+        .A5 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 2px solid #1A1A1A;
+
+            margin: 0 auto;
+            margin-top: 85px;
+            background-image: url(03937cda731cb70df142d028116f7a5c.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+        }
+
+        .A2 {
+            color: white;
+            font-family: Montserrat, sans-serif;
+            font-size: 18px;
+        }
+
+        h1 {
+            margin-top: 15%;
+            color: white;
+            font-family: Race sport, sans-serif;
+            font-size: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: Race sport, sans-serif;
+        }
+
+        .titre {
+            text-align: center;
+            color: black;
+            font-family: Race sport, sans-serif;
+        }
+
+        .description {
+            text-align: center;
+            color: white;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .descriptionBB {
+            text-align: center;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .btn {
+            padding: 8px;
+            color: white;
+            background: #43A83F;
+            border: #43A83F;
+            border-radius: 10px;
+            width: 120px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .B {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .B1 {
+            width: 32%;
+            height: 400px;
+            border: 1px solid white;
+            border-radius: 20px;
+        }
+
+        .B2a {
+            height: 68%;
+            border-radius: 20px 20px 0 0;
+            background-image: url(17ad84a63d141bcc22031dcdfd75cc98.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .B2b {
+            height: 68%;
+            border-radius: 20px 20px 0 0;
+            background-image: url(5ee02389bd5f108e700d6231391f5bd7.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .B2c {
+            height: 68%;
+            border-radius: 20px 20px 0 0;
+            background-image: url(faf1db7c78bdfb3cd7df171e29d8bc83.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .B2d {
+            height: 68%;
+            border-radius: 20px 20px 0 0;
+            background-image: url(b84e4ba9b7f4edde778be9f7c5b3dc22.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .B2e {
+            height: 68%;
+            border-radius: 20px 20px 0 0;
+            background-image: url(1f065a8ee1267dda23330724ae7bd58e.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .B2f {
+            height: 68%;
+            border-radius: 20px 20px 0 0;
+            background-image: url(45e5dcdceb9ec2f79ff7f149f9ec4948.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        h4 {
+            margin-left: 15px;
+            color: white;
+        }
+
+        .explic {
+            margin-left: 15px;
+            color: white;
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+        }
+
+        .detail {
+            text-decoration: none;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .C {
+             margin-top: 40px;
+    background: #3C3D42;
+    padding: 40px 0;
+        }
+
+        .C1 {
+        background: #1A1A1A;
+        }
+
+
+        .C1a {
+            background: #0D70B7;
+    transform: scale(1.05);
+        }
+
+
+        .C2 {
+            display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1190px;
+    width: 90%;
+    margin: 40px auto;
+    gap: 20px;
+        }
+
+        .C1, .C1a {
+    width: 32%;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        }
+
+        .type {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+
+        }
+
+        .prix {
+            text-align: center;
+            color: #43A83F;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .acces {
+            color: white;
+            line-height: 30px;
+            margin-top: 20px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .option {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .btn2, .btn2a {
+    margin-top: 20px;
+}
+        .btn2 {
+            padding: 10px;
+            color: #43A83F;
+            background: white;
+            border: 2px solid #1A1A1A;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 89px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .btn2a {
+            padding: 10px;
+            color: #43A83F;
+            background: white;
+            border: 2px solid #0D70B7;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 89px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .opbtn {
+             margin-top: auto;
+        }
+
+        .D {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .D {
+            margin-top: 40px;
+        }
+
+        .D2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .D4 {
+            max-width: 1190px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .D1a {
+            width: 48%;
+            height: 500px;
+            border-radius: 20px;
+            background-image: url(f859dbe63ef023c378f6654d65b9243a.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: white 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+
+        .D1b {
+            width: 48%;
+            height: 500px;
+            border-radius: 20px;
+            background-image: url(b32ebc44bdae0d7ef61e3b6ff75350a8.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: white 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+
+        .D1c {
+            width: 48%;
+            height: 500px;
+            border-radius: 20px;
+            background-image: url(44a6534bdd877ac8aa97b6c26da031ae.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: white 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+
+        .D1d {
+            width: 48%;
+            height: 500px;
+            border-radius: 20px;
+            background-image: url(913b43cf78fb867e0f033f5e6f6695e6.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: white 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+
+        .nom {
+            margin-left: 75%;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .specia {
+            margin-top: 60%;
+            margin-left: 15px;
+            color: white;
+            font-family: Montserrat, sans-serif;
+            font-size: 14px;
+        }
+
+        .qualifica {
+            margin-left: 15px;
+            color: white;
+            font-family: Montserrat, sans-serif;
+            font-size: 14px;
+        }
+
+        .E {
+            margin-top: 30px;
+            max-width: 1190px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .E2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .E1 {
+            width: 32%;
+            height: 250px;
+            background: #3C3D42;
+            border-radius: 20px;
+            box-shadow: white 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+
+        .E3a {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-image: url(6cf3430ef5024b7989741f94bbbd8c3e.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .E3b {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-image: url(1ef33d51a0906be4e8de62acf558e567.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .E3c {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-image: url(3634ad05f34b6911b8dac140366dbeeb.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .E4 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .E5 {
+            margin-left: 10px;
+            margin-top: 40px;
+            color: white;
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+        }
+
+        .E6 {
+            color: white;
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+        }
+
+        .F {
+            background: #3C3D42;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .F1 {
+            display: inline-flex;
+            border: 2px solid #43A83F;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-left: 37%;
+            width: 300px;
+            background: #43A83F;
+        }
+
+        .BTNF {
+            padding: 10px 20px;
+            border: none;
+            background: white;
+            color: #43A83F;
+            cursor: pointer;
+            font-weight: 500;
+            border-right: 1px solid #43A83F;
+            margin-left: 88px;
+            border-radius: 8px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .BTNF:hover {
+            opacity: 0.5;
+            background: #43A83F;
+            color: white;
+        }
+
+        .BTNF2 {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            background: #43A83F;
+            color: white;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .BTNF2:hover {
+            opacity: 0.5;
+        }
+
+        .Logo2 {
+            background-image: url(Logo\ SUNUGAL\ SPORT2_Plan\ de\ travail\ 1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100px;
+            height: 50px;
+        }
+
+        .G {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+        }
+
+        .reseau {
+            font-size: 25px;
+        }
+
+        .G1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copy {
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+        }
+
+        .slider {
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #1A1A1A;
+            height: 600px;
+        }
+
+        .slidecontain {
+            display: flex;
+            width: 500%;
+            height: 100%;
+            animation: slideAnim 16s infinite;
+        }
+
+        @keyframes slideAnim {
+            0% {
+                transform: translateX(0);
+            }
+
+            20% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-20%);
+            }
+
+            45% {
+                transform: translateX(-20%);
+            }
+
+            50% {
+                transform: translateX(-40%);
+            }
+
+            70% {
+                transform: translateX(-40%);
+            }
+
+            75% {
+                transform: translateX(-60%);
+            }
+
+            95% {
+                transform: translateX(-60%);
+            }
+
+            100% {
+                transform: translateX(-80%);
+            }
+        }
+
+       .menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 414px) {
+
+    /* MENU BURGER */
+    .menu-icon {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .menu li {
+        padding: 15px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    /* STRUCTURE */
+    .B, .D, .D2, .E2, .C2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .B1, .D1a, .D1b, .D1c, .D1d, .E1{
+        width: 100%;
+    }
+    .C1, .C1a {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .description{
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+    .A2 {
+        font-size: 13px;
+    }
+
+    .slider {
+        height: 350px;
+    }
+    .F1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+
+    /* MENU */
+    .menu-icon {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    /* STRUCTURE TABLETTE */
+    .B, .E2, .C2 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .B1, .E1, .C1, .C1a {
+        width: 48%;
+    }
+
+    .D, .D2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .D1a, .D1b, .D1c, .D1d {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 30%;
+    }
+
+    .slider {
+        height: 450px;
+    }
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="recmenu">
+            <div class="logo">
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <a href="" class="achref">
+                    <li>Accueil</li>
+                </a>
+                <a href="#Programmes" class="achref">
+                    <li>Programmes</li>
+                </a>
+                <a href="#Tarifs" class="achref">
+                    <li>Tarifs</li>
+                </a>
+                <a href="#Coachs" class="achref">
+                    <li>Coachs</li>
+                </a>
+                <a href="#Inscrip" class="achref">
+                    <li>Inscription</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Contacts</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="slidecontain">
+            <div class="A1">
+                <h1>221% de motivation, 100% de résultats</h1>
+                <p class="A2">Plus qu'une salle de sport, une véritable famille. Ensemble dans la même
+                    pirogue,<br> nous vous
+                    accompagnons chaque jour pour transformer votre énergie en force et votre motivation en résultats.
+                </p>
+                <button class="btn">Découvrir</button>
+            </div>
+            <div class="A3">
+                <h1>Construis ton corps, forge ton mental</h1>
+                <p class="A2">Plus qu'une salle de sport, une véritable famille. Ensemble dans la même
+                    pirogue,<br> nous vous
+                    accompagnons chaque jour pour transformer votre énergie en force et votre motivation en résultats.
+                </p>
+                <button class="btn">Découvrir</button>
+            </div>
+            <div class="A4">
+                <h1>Ton programme, ta transformation</h1>
+                <p class="A2">Plus qu'une salle de sport, une véritable famille. Ensemble dans la même
+                    pirogue,<br> nous vous
+                    accompagnons chaque jour pour transformer votre énergie en force et votre motivation en résultats.
+                </p>
+                <button class="btn">Découvrir</button>
+            </div>
+            <div class="A5">
+                <h1>Rejoins la communauté qui se dépasse chaque jour.</h1>
+                <p class="A2">Plus qu'une salle de sport, une véritable famille. Ensemble dans la même
+                    pirogue,<br> nous vous
+                    accompagnons chaque jour pour transformer votre énergie en force et votre motivation en résultats.
+                </p>
+                <button class="btn">Découvrir</button>
+            </div>
+            <div class="A1">
+                <h1>221% de motivation, 100% de résultats</h1>
+                <p class="A2">Plus qu'une salle de sport, une véritable famille. Ensemble dans la même
+                    pirogue,<br> nous vous
+                    accompagnons chaque jour pour transformer votre énergie en force et votre motivation en résultats.
+                </p>
+                <button class="btn">Découvrir</button>
+            </div>
+        </div>
+    </section>
+    <section class="BB" id="Programmes">
+        <h2>Nos Programmes</h2>
+        <p class="description">Retrouvez la forme à votre rythme. Nos programmes variés allient plaisir et <br>
+            efficacité pour sculpter votre
+            corps et booster votre santé au quotidien, dans une ambiance motivante et conviviale.</p>
+        <div class="B">
+            <div class="B1">
+                <div class="B2a"></div>
+                <a href="program.html" class="detail">
+                    <h4>Musculation</h4>
+                </a>
+                <p class="explic">Entraînement de force, développement musculaire et amélioration de l’explosivité</p>
+            </div>
+            <div class="B1">
+                <div class="B2b"></div>
+                <a href="" class="detail">
+                    <h4>Crossfit</h4>
+                </a>
+                <p class="explic">La discipline par exellence pour une préparation musculaire et cardio : Réveille
+                    l’athelète en toi</p>
+            </div>
+            <div class="B1">
+                <div class="B2c"></div>
+                <a href="" class="detail">
+                    <h4>Yoga</h4>
+                </a>
+                <p class="explic">Une parenthèse de calme dans votre routine dynamique pour libérer les tensions et
+                    cultiver votre énergie intérieure.</p>
+            </div>
+        </div>
+        <div class="B">
+            <div class="B1">
+                <div class="B2d"></div>
+                <a href="" class="detail">
+                    <h4>Boxe</h4>
+                </a>
+                <p class="explic">Retrouve l’ambiance des meilleurs clubs de boxe dans un espace en libre accès</p>
+            </div>
+            <div class="B1">
+                <div class="B2e"></div>
+                <a href="" class="detail">
+                    <h4>Fitness</h4>
+                </a>
+                <p class="explic">Entraîne-toi pour te remettre en forme brûle le maximum de calories, perds du poids et
+                    développe ton endurance</p>
+            </div>
+            <div class="B1">
+                <div class="B2f"></div>
+                <a href="" class="detail">
+                    <h4>Cours collectifs</h4>
+                </a>
+                <p class="explic">Enchaîne les cours vidéo Studio ou coachés, pour t’entraîner efficacement, quand tu
+                    veux</p>
+            </div>
+        </div>
+    </section>
+    <section class="C" id="Tarifs">
+        <h2>Nos Tarifs</h2>
+        <p class="description">Des tarifs simples pour des résultats réels. Trouvez la formule idéale,<br> du pass
+            journalier à l'abonnement annuel, et commencez votre transformation avec Sunugal Sport 221</p>
+        <div class="C2">
+            <div class="C1">
+                <p class="type">Mensuel</p>
+                <p class="prix">25 000FCFA</p>
+                <ul class="acces">
+                    <li>Droits d'entrée : 5000 FCFA</li>
+                    <li>Carte de membre : 2000 FCFA</li>
+                    <li>Accès complet</li>
+                    <li>Cardio & Musculation</li>
+                </ul>
+                <div class="opbtn">
+                    <p class="option">Ajout d'option possible à l'unité</p>
+                    <button class="btn2">Je m’abonne</button>
+                </div>
+            </div>
+            <div class="C1a">
+                <p class="type">Annuel</p>
+                <p class="prix">220 000FCFA</p>
+                <ul class="acces">
+                    <li>Droits d'entrée : 5000 FCFA</li>
+                    <li>Carte de membre : 2000 FCFA</li>
+                    <li>Soit ~18 300 F/mois.</li>
+                    <li>+ 2 mois offerts</li>
+                    <li>check-up santé</li>
+                </ul>
+                <div class="opbtn">
+                    <p class="option">FULL OPTIONS : accès à toutes <br>les options du club</p>
+                    <button class="btn2a">Je m’abonne</button>
+                </div>
+            </div>
+            <div class="C1">
+                <p class="type">Trimestriel</p>
+                <p class="prix">65 000FCFA</p>
+                <ul class="acces">
+                    <li>Droits d'entrée : 5000 FCFA</li>
+                    <li>Carte de membre : 2000 FCFA</li>
+                    <li>Soit ~21 600 F/mois</li>
+                    <li>+ 1 séance gratuite avec un coach</li>
+                </ul>
+                <div class="opbtn">
+                    <p class="option">Ajout d'option possible à l'unité</p>
+                    <button class="btn2">Je m’abonne</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="D4" id="Coachs">
+        <h2>Nos Coachs</h2>
+        <p class="description">Nos coachs combinent science du sport et expérience terrain pour vous offrir <br> un
+            suivi
+            personnalisé et des résultats concrets, séance après séance</p>
+        <div class="D">
+            <div class="D1a">
+                <a href="coach.html">
+                    <p class="nom">Coach Antony</p>
+                </a>
+                <p class="specia">Musculation</p>
+                <p class="qualifica">Force pure, résultats garantis, dépassement</p>
+            </div>
+            <div class="D1b">
+                <p class="nom">Coach Alex</p>
+                <p class="specia">Fitness</p>
+                <p class="qualifica">Énergie sans limite, cardio explosif</p>
+            </div>
+        </div>
+        <div class="D2">
+            <div class="D1c">
+                <p class="nom">Coach Sofi</p>
+                <p class="specia">Yoga</p>
+                <p class="qualifica">Équilibre, sérénité, souplesse, esprit libre</p>
+            </div>
+            <div class="D1d">
+                <p class="nom">Coach Jean</p>
+                <p class="specia">Nutrition</p>
+                <p class="qualifica">Nutrition saine, vitalité, corps transformé</p>
+            </div>
+        </div>
+    </section>
+    <section class="E">
+        <h2>Témoignages</h2>
+        <p class="description">Découvrez les retours de nos lecteurs et partenaires. Leurs avis témoignent de notre
+            engagement à fournir une information sportive fiable et de qualité sur l'actualité</p>
+        <div class="E2">
+            <div class="E1">
+                <div class="E4">
+                    <div class="E3a"></div>
+                    <p class="E6"><strong>Awa Wade</strong></p>
+                </div>
+                <p class="E5">Je suis venue pour perdre du poids et j'ai gagné tellement plus : confiance en moi,
+                    énergie et une
+                    vraie famille ! Les cours collectifs sont géni </p>
+            </div>
+            <div class="E1">
+                <div class="E4">
+                    <div class="E3b"></div>
+                    <p class="E6"><strong>Jean Patrick</strong></p>
+                </div>
+                <p class="E5">Après avoir essayé plusieurs salles de sport à Dakar,<br> j'ai enfin trouvé celle qui me
+                    convient. Les
+                    programmes sont variés et les résultats sont au rendez-vous. Merci <br> à toute l'équipe !"</p>
+            </div>
+            <div class="E1">
+                <div class="E4">
+                    <div class="E3c"></div>
+                    <p class="E6"><strong>Christelle</strong></p>
+                </div>
+                <p class="E5">"SUNUGAL SPORT 221 a complètement transformé ma vie ! L'ambiance est incroyable, les
+                    coachs sont
+                    motivants et les équipements sont de première qualité.</p>
+            </div>
+        </div>
+    </section>
+    <section class="F" id="Inscrip">
+        <h2>Inscription et contact</h2>
+        <p class="description">Saute le pas et rejoins la communauté. On répond à toutes tes questions sous 24h.</p>
+        <div>
+            <div class="F1">
+                <a href="formulaire.html">
+                    <button class="BTNF2">S'inscrire</button>
+                    <button class="BTNF">Contacter</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="G">
+        <!-- <div class="Logo2"></div> -->
+        <div class="G1">
+            <p class="copy">© 2026 Sunugal Sport 221 – Site officiel – Tous droits réservés.</p>
+            <div class="reseau">
+                <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-square-instagram"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><i class="fa-brands fa-square-facebook"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://x.com/?lang=fr" target="_blank"><i class="fa-brands fa-square-x-twitter"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://fr.linkedin.com/" target="_blank"><i class="fa-brands fa-square-linkedin"
+                        style="color: #43A83F;"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

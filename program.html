@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background: white;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        body {
+            background: #1A1A1A;
+overflow-x: hidden;
+        }
+
+        .logo {
+            background-image: url(Logo\ SUNUGAL\ SPORT2_Plan\ de\ travail\ 1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100px;
+            height: 70px;
+        }
+
+        .menu {
+            width: 450px;
+            height: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+
+        }
+
+        .achref {
+            text-decoration: none;
+            color: #1A1A1A;
+        }
+
+        .recmenu {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+            align-items: center;
+        }
+
+        .hero {
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        .img {
+            height: 500px;
+            border: 2px solid #1A1A1A;
+            background-image: url(Oa34CGHUjSmMIXaX_61y08P6FYgdW5nMMy_QWS-0T9Tbv6VE1v9cwKigI52lMDf-qDE0yxelwuRELZ0l4B-V48udKLXc97uokvZtAprZ7tvl25UnNVOQ3Otc0bBUSlWL3_cLGn6teCaNiKgbo7kBKhCF2I0toZEkmIGT3EoY18xwrTamXn3slyRa-4oKjTgz.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: bouger 5s infinite alternate;
+            width: 100%;
+            max-width: 1190px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 10%;
+            margin-left: 60px;
+            font-family: Race sport, sans-serif;
+            font-size: 40px;
+        }
+
+        .descrip {
+            color: white;
+            margin-left: 60px;
+            font-family: Montserrat, sans-serif;
+            font-size: 18px;
+        }
+
+        .sect {
+            margin-top: 40px;
+            margin: 0 auto;
+            max-width: 1190px;
+            width: 90%;
+            padding: 0 15px;
+        }
+
+        .burger {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: Race sport, sans-serif;
+        }
+
+        .B {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .B1 {
+            width: 23%;
+            height: 300px;
+            border: 1px solid white;
+            border-radius: 20px;
+            box-sizing: border-box;
+            animation: monter 5s infinite alternate;
+        }
+
+        @keyframes bouger {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 3;
+            }
+        }
+
+        @keyframes monter {
+            from {
+                transform: translatey(5px);
+            }
+
+            to {
+                transform: translatey(15px);
+            }
+        }
+
+        .image1 {
+            height: 180px;
+            border-radius: 20px 20px 0 0;
+            background-image: url(222.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid #1A1A1A;
+        }
+
+        .image2 {
+            height: 180px;
+            border-radius: 20px 20px 0 0;
+            background-image: url(111.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid #1A1A1A;
+        }
+
+        .image3 {
+            height: 180px;
+            border-radius: 20px 20px 0 0;
+            background-image: url(333.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid #1A1A1A;
+        }
+
+        .image4 {
+            height: 180px;
+            border-radius: 20px 20px 0 0;
+            background-image: url(444.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid #1A1A1A;
+        }
+
+
+        .detail {
+            color: white;
+            margin-left: 9px;
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+        .list {
+            color: white;
+            margin-left: 9px;
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+        }
+
+        .Logo2 {
+            background-image: url(Logo\ SUNUGAL\ SPORT2_Plan\ de\ travail\ 1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100px;
+            height: 50px;
+        }
+
+        .G {
+            margin-top: 20px;
+            background: white;
+        }
+
+        .reseau {
+            font-size: 25px;
+        }
+
+        .G1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copy {
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+        }
+
+        .fa-solid fa-arrow-right {
+            font-size: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* mobilemobilemobilemobilemobilemobilemobilemobilemobile */
+
+@media screen and (max-width: 414px) {
+
+    /* MENU BURGER */
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #menu-toggle:checked + .burger + .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        align-items: center;
+        height: auto;
+    }
+
+    .menu li {
+        padding: 15px 0;
+    }
+
+      html, body {
+        overflow-x: hidden;
+    }
+
+    /* HERO */
+    h1 {
+        font-size: 22px;
+        margin-left: 0;
+        padding: 0 10px;
+        margin-top: 20%;
+    }
+
+    .descrip {
+        font-size: 13px;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .img {
+        height: 350px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* SECTION (CORRECTION PRINCIPALE) */
+    .sect {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 10px;
+
+    }
+
+    .detail,
+    .list {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+    /* CARTES */
+    .B {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .B1 {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .G1 {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="recmenu">
+            <div class="logo">
+            </div>
+            <input type="checkbox" id="menu-toggle">
+
+            <!-- burger icon -->
+            <label for="menu-toggle" class="burger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <a href="index.html" class="achref">
+                    <li>Accueil</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Programmes</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Tarifs</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Coachs</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Inscription</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Contacts</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="img">
+            <h1>Musculation</h1>
+            <p class="descrip">Un programme de musculation structuré pour développer <br> force, masse et confiance en
+                soi.
+            </p>
+        </div>
+    </section>
+    <section class="sect">
+        <h2>Programme de musculation (4 jours)</h2>
+        <div class="B">
+            <div class="B1">
+                <div class="image1"></div>
+                <p class="detail">Jour 1:Poitrine + Triceps</p>
+                <ul class="list">
+                    <li>Développé couché</li>
+                    <li>Développé incliné haltères</li>
+                    <li>Pompes</li>
+                </ul>
+            </div>
+            <div class="B1">
+                <div class="image2"></div>
+                <p class="detail">Jour 2 : Dos + Biceps</p>
+                <ul class="list">
+                    <li>Tractions</li>
+                    <li>Tirage horizontal</li>
+                    <li>Curl barre</li>
+                </ul>
+            </div>
+            <div class="B1">
+                <div class="image3"></div>
+                <p class="detail">Jour 3 : Jambes</p>
+                <ul class="list">
+                    <li>Squat</li>
+                    <li>Presse à cuisses</li>
+                    <li>Mollets debout</li>
+                </ul>
+            </div>
+            <div class="B1">
+                <div class="image4"></div>
+                <p class="detail">Jour 4 : Épaules + Abdos</p>
+                <ul class="list">
+                    <li>Développé militaire</li>
+                    <li>Élévations latérales</li>
+                    <li>Oiseau (arrière épaule)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="G">
+        <!-- <div class="Logo2"></div> -->
+        <div class="G1">
+            <p class="copy">© 2026 Sunugal Sport 221 – Site officiel – Tous droits réservés.</p>
+            <div class="reseau">
+                <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-square-instagram"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><i class="fa-brands fa-square-facebook"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://x.com/?lang=fr" target="_blank"><i class="fa-brands fa-square-x-twitter"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://fr.linkedin.com/" target="_blank"><i class="fa-brands fa-square-linkedin"
+                        style="color: #43A83F;"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

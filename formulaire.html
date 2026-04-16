@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background: white;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        body {
+            background: #1A1A1A;
+
+        }
+
+        .logo {
+            background-image: url(Logo\ SUNUGAL\ SPORT2_Plan\ de\ travail\ 1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100px;
+            height: 70px;
+        }
+
+        .menu {
+            width: 450px;
+            height: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+
+        }
+
+        .achref {
+            text-decoration: none;
+            color: #1A1A1A;
+        }
+
+        .recmenu {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1190px;
+            width: 90%;
+            margin: auto;
+            align-items: center;
+
+        }
+
+        .hero {
+            margin-top: 100px;
+        }
+
+        .img {
+            height: 500px;
+            border: 2px solid #1A1A1A;
+            background-image: url(930d9e2f0eb5abe9e89c11031d96f41c.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: bouger 5s alternate infinite;
+        }
+
+        @keyframes bouger {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 3;
+            }
+        }
+
+        h1 {
+            color: white;
+            margin-top: 10%;
+            margin-left: 60px;
+            font-family: Race sport, sans-serif;
+            font-size: 40px;
+        }
+
+        .descrip {
+            color: white;
+            margin-left: 60px;
+            font-family: Montserrat, sans-serif;
+            font-size: 18px;
+        }
+
+        .A1 {
+            width: 40%;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .A2 {
+            width: 48%;
+        }
+
+        form {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 10px;
+        }
+
+        .A {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            background: white;
+            border: 2px solid #1A1A1A;
+            /* max-width: 1190px; */
+            width: 100%;
+            margin: 90px auto;
+        }
+
+        .ralonge {
+            width: 95%;
+            height: 30px;
+            border-radius: 6px;
+            border: 1px solid #43A83F;
+            background: white;
+            margin-left: 10px;
+        }
+
+        .ralonge2 {
+            width: 95%;
+            height: 30px;
+            border-radius: 6px;
+            height: 70px;
+            border: 1px solid #43A83F;
+            margin-left: 10px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 10px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .nomm {
+            color: #43A83F;
+            font-family: Montserrat, sans-serif;
+            margin-left: 10px;
+        }
+
+        .btn {
+            padding: 8px;
+            color: white;
+            background: #43A83F;
+            border: #43A83F;
+            border-radius: 10px;
+            width: 120px;
+            margin-left: 40%;
+            margin-top: 30px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .A3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .A4 {
+            margin-top: 40px;
+        }
+
+        .A5 {
+            font-size: 20px;
+            font-family: Montserrat, sans-serif;
+            font-weight: bold;
+        }
+
+        .cont {
+            font-size: 15px;
+            font-family: Montserrat, sans-serif;
+            margin-left: 10px;
+        }
+
+        .Logo2 {
+            background-image: url(Logo\ SUNUGAL\ SPORT2_Plan\ de\ travail\ 1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100px;
+            height: 50px;
+        }
+
+        .G {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+        }
+
+        .reseau {
+            font-size: 25px;
+        }
+
+        .G1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copy {
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+        }
+
+        .fa-solid .fa-arrow-right {
+            font-size: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .burger {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+
+        /* mobilemobilemobilemobilemobilemobilemobilemobile */
+       @media screen and (max-width: 414px) {
+
+ /* MENU BURGER */
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #menu-toggle:checked + .burger + .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        align-items: center;
+        height: auto;
+    }
+
+    .menu li {
+        padding: 15px 0;
+    }
+
+
+    h1 {
+        font-size: 20px;
+        margin-left: 0;
+        margin-top: 20%;
+    }
+
+    .descrip {
+        font-size: 13px;
+        margin-left: 0;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero{
+        width: 100%;
+        overflow: hidden;
+    }
+    /* formulaire */
+    .ralonge, .ralonge2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nomm {
+        margin-left: 0;
+    }
+
+
+    .A1, .A2{
+        width: 100%;
+    }
+    /* contact */
+    .cont {
+        font-size: 13px;
+    }
+
+    /* footer */
+    .G1 {
+        flex-direction: column;
+        gap: 10px;
+        /* text-align: center; */
+    }
+}
+       
+       /* tablettetablettetablettetablettetablettetablettetablette */
+        @media screen and (max-width: 768px) {
+
+    /* menu */
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #menu-toggle:checked + .burger + .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        align-items: center;
+    }
+
+    .menu li {
+        padding: 15px 0;
+    }
+
+    /* HERO */
+    h1 {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+
+    .descrip {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    /* FORM SECTION */
+    .A {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .A1, .A2 {
+        width: 100%;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    .btn {
+        margin-left: 0;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="recmenu">
+            <div class="logo">
+            </div>
+            <input type="checkbox" id="menu-toggle">
+
+            <!-- burger -->
+            <label for="menu-toggle" class="burger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <a href="index.html" class="achref">
+                    <li>Accueil</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Programmes</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Tarifs</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Coachs</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Inscription</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Contacts</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="img">
+            <h1>Formulaire d'inscription <br> et de contact</h1>
+            <p class="descrip">Ne remettez pas vos objectifs à demain. Inscrivez-vous dès aujourd'hui pour rejoindre
+                <br> une communauté qui
+                se dépasse. Une question sur nos programmes ou nos tarifs ? <br>Contactez-nous, nous sommes là pour vous
+                propulser vers vos résultats
+            </p>
+        </div>
+    </section>
+    <section class="A">
+        <div class="A1">
+            <h3>Inscription</h3>
+            <form>
+                <label for="nom" class="nomm">Nom</label><br>
+                <input type="text" placeholder="Saisir votre nom" class="ralonge"><br><br>
+                <label for="prénom" class="nomm">Prénom</label><br>
+                <input type="text" placeholder="Saisir votre prénom" class="ralonge"><br><br>
+                <label for="prénom" class="nomm">Adresse mail</label><br>
+                <input type="mail" placeholder="exemple@gmail.com" class="ralonge"><br><br>
+                <label for="" class="nomm">Tétéphone</label><br>
+                <input type="text" placeholder="Saisir votre numéro de téléphone" class="ralonge"><br><br>
+                <label for="" class="nomm">Formule souhaitée</label><br>
+                <select name="Abonnememt" id="" class="ralonge">
+                    <option value="">Mensuel</option>
+                    <option value="">Trimestriel</option>
+                    <option value="">Annuel</option>
+                </select><br><br>
+                <label for="nom" class="nomm">Poser vos questions</label><br>
+                <textarea name="" id="" class="ralonge2"></textarea>
+            </form>
+            <button class="btn">Envoyer</button>
+        </div>
+        <div class="A2">
+            <div>
+                <div class="A3">
+                    <p class="A5">Besoin d’aide? <br> contactez-nous dès maintenant</p>
+                </div>
+                <div class="A4">
+                    <p class="cont"><i class="fa-solid fa-square-phone" style="color: #43A83F; font-size: 30px;"></i>33
+                        526 60 93/ 33
+                        031 88 47</p>
+                    <p class="cont"><i class="fa-solid fa-square-envelope"
+                            style="color: #43A83F; font-size: 30px;"></i>sunugalsport221@gmail.com</p>
+                </div>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.8082094521883!2d-17.455306290757044!3d14.723432685718324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173c21564c333%3A0x504d9e7bb5384f5a!2sEcole%20221!5e0!3m2!1sfr!2ssn!4v1776161329333!5m2!1sfr!2ssn"
+                width="95%" height="50%" style="border-radius: 20px; border: 1px solid #43A83F; margin: 0 auto; margin-top: 30px;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </section>
+    <section class="G">
+        <!-- <div class="Logo2"></div> -->
+        <div class="G1">
+            <p class="copy">© 2026 Sunugal Sport 221 – Site officiel – Tous droits réservés.</p>
+            <div class="reseau">
+                <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-square-instagram"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><i class="fa-brands fa-square-facebook"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://x.com/?lang=fr" target="_blank"><i class="fa-brands fa-square-x-twitter"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://fr.linkedin.com/" target="_blank"><i class="fa-brands fa-square-linkedin"
+                        style="color: #43A83F;"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

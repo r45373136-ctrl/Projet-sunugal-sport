@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background: white;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        body {
+            background: #1A1A1A;
+        }
+
+        .logo {
+            background-image: url(Logo\ SUNUGAL\ SPORT2_Plan\ de\ travail\ 1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100px;
+            height: 70px;
+        }
+
+        .menu {
+            width: 450px;
+            height: 30px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+
+        }
+
+        .achref {
+            text-decoration: none;
+            color: #1A1A1A;
+        }
+
+        .recmenu {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1190px;
+            width: 90%;
+            margin: auto;
+            align-items: center;
+        }
+
+        .hero {
+            margin-top: 90px;
+
+        }
+
+        .img {
+
+            height: 500px;
+            border: 2px solid #1A1A1A;
+            background-image: url(7f117c3990e352db8da28e9f0b3a1595.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: bouger 5s infinite alternate;
+
+        }
+
+        .Sect1 {
+            max-width: 1190px;
+            width: 90%;
+            margin: auto;
+        }
+
+        h1 {
+            color: white;
+            margin-top: 10%;
+            margin-left: 60px;
+            font-family: Race sport, sans-serif;
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        .descrip {
+            color: white;
+            margin-left: 60px;
+            font-family: Montserrat, sans-serif;
+            font-size: 18px;
+        }
+
+        h2 {
+
+            color: white;
+            font-family: Race sport, sans-serif;
+        }
+
+        .D {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .D1 {
+            width: 45%;
+            height: 300px;
+            border-radius: 20px;
+        }
+
+        .D2 {
+            width: 48%;
+            height: 350px;
+            border-radius: 20px;
+        }
+
+        .histo {
+            color: white;
+            font-family: Montserrat, sans-serif;
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        .btn {
+            padding: 8px;
+            color: white;
+            background: #43A83F;
+            border: none;
+            border-radius: 10px;
+            width: 220px;
+            font-family: Montserrat, sans-serif;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .Logo2 {
+            background-image: url(Logo\ SUNUGAL\ SPORT2_Plan\ de\ travail\ 1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100px;
+            height: 50px;
+        }
+
+        .G {
+            margin-top: 20px;
+            background: white;
+        }
+
+        .reseau {
+            font-size: 25px;
+        }
+
+        .G1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copy {
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+        }
+
+        .fa-solid .fa-arrow-right {
+            font-size: 8px;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        /* icône burger */
+        .menu-icon {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 414px) {
+
+    /* BURGER */
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .menu li {
+        padding: 15px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    /* HERO */
+    h1 {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    .descrip {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* SECTION */
+    .D {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .D1, .D2 {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* FOOTER */
+    .G1 {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .btn{
+        margin-left: 45px;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 468px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    /* SECTION */
+    .D {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .D1, .D2 {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-left: 30px;
+    }
+
+    .descrip {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="recmenu">
+            <div class="logo">
+            </div>
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <a href="index.html" class="achref">
+                    <li>Accueil</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Programmes</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Tarifs</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Coachs</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Inscription</li>
+                </a>
+                <a href="" class="achref">
+                    <li>Contacts</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="img">
+            <h1>Coach Antony</h1>
+            <p class="descrip">Expert en musculation, Coach Antony guide ses élèves avec rigueur <br> et énergie pour
+                atteindre des performances optimales.
+            </p>
+        </div>
+    </section>
+    <section class="Sect1">
+        <h2>Parcours</h2>
+        <div class="D">
+            <div class="D1">
+                <p class="histo">Coach Antony est un passionné de musculation et de remise en forme, dédié à accompagner
+                    chaque
+                    personne dans l’atteinte de ses objectifs physiques. Grâce à son expérience et à son approche
+                    personnalisée, il propose des programmes adaptés à tous les niveaux, du débutant à l’athlète
+                    confirmé.
+
+                    Motivé et à l’écoute, il met un point d’honneur à offrir un encadrement de qualité basé sur la
+                    discipline, la régularité et des résultats durables. Son objectif est d’aider chacun à développer sa
+                    force, améliorer sa condition physique et gagner en confiance.</p>
+            </div>
+            <div class="D2">
+                <iframe width="560" height="350" src="https://www.youtube.com/embed/i5VA9_lnHy0?si=eOgDkancH3ldY8zt"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <button class="btn">Privatiser le coach</button>
+    </section>
+    <section class="G">
+        <!-- <div class="Logo2"></div> -->
+        <div class="G1">
+            <p class="copy">© 2026 Sunugal Sport 221 – Site officiel – Tous droits réservés.</p>
+            <div class="reseau">
+                <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-square-instagram"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><i class="fa-brands fa-square-facebook"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://x.com/?lang=fr" target="_blank"><i class="fa-brands fa-square-x-twitter"
+                        style="color: #43A83F;"></i></a>
+                <a href="https://fr.linkedin.com/" target="_blank"><i class="fa-brands fa-square-linkedin"
+                        style="color: #43A83F;"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

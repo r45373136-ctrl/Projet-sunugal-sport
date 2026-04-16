@@ -250,39 +250,40 @@
         }
 
         .C {
-             margin-top: 40px;
-    background: #3C3D42;
-    padding: 40px 0;
+            margin-top: 40px;
+            background: #3C3D42;
+            padding: 40px 0;
         }
 
         .C1 {
-        background: #1A1A1A;
+            background: #1A1A1A;
         }
 
 
         .C1a {
             background: #0D70B7;
-    transform: scale(1.05);
+            transform: scale(1.05);
         }
 
 
         .C2 {
             display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    max-width: 1190px;
-    width: 90%;
-    margin: 40px auto;
-    gap: 20px;
+            justify-content: space-between;
+            align-items: stretch;
+            max-width: 1190px;
+            width: 90%;
+            margin: 40px auto;
+            gap: 20px;
         }
 
-        .C1, .C1a {
-    width: 32%;
-    border-radius: 20px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+        .C1,
+        .C1a {
+            width: 32%;
+            border-radius: 20px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .type {
@@ -317,9 +318,11 @@
             font-family: Montserrat, sans-serif;
         }
 
-        .btn2, .btn2a {
-    margin-top: 20px;
-}
+        .btn2,
+        .btn2a {
+            margin-top: 20px;
+        }
+
         .btn2 {
             padding: 10px;
             color: #43A83F;
@@ -347,7 +350,7 @@
         }
 
         .opbtn {
-             margin-top: auto;
+            margin-top: auto;
         }
 
         .D {
@@ -642,132 +645,158 @@
             }
         }
 
-       .menu-icon {
-    display: none;
-}
+        .menu-icon {
+            display: none;
+        }
 
-@media screen and (max-width: 414px) {
+        #menu-toggle {
+            display: none;
+        }
 
-    /* MENU BURGER */
-    .menu-icon {
-        display: block;
-        font-size: 25px;
-        cursor: pointer;
-    }
+        @media screen and (max-width: 414px) {
 
-    .menu {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: auto;
-        background: white;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
+            /* MENU BURGER */
+            .menu-icon {
+                display: block;
+                font-size: 25px;
+                cursor: pointer;
+            }
 
-    .menu li {
-        padding: 15px 0;
-    }
+            .menu {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: auto;
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                display: none;
+            }
 
-    #menu-toggle:checked + .menu-icon + .menu {
-        display: flex;
-    }
+            .menu li {
+                padding: 15px 0;
+            }
 
-    /* STRUCTURE */
-    .B, .D, .D2, .E2, .C2 {
-        flex-direction: column;
-        gap: 20px;
-    }
+            #menu-toggle:checked+.menu-icon+.menu {
+                display: flex;
+            }
 
-    .B1, .D1a, .D1b, .D1c, .D1d, .E1{
-        width: 100%;
-    }
-    .C1, .C1a {
-        width: 85%;
-    }
+            /* STRUCTURE */
+            .B,
+            .D,
+            .D2,
+            .E2,
+            .C2 {
+                flex-direction: column;
+                gap: 20px;
+            }
 
-    h1 {
-        font-size: 16px;
-        margin-top: 30px;
-    }
-    h2{
-        font-size: 16px;
-    }
-    .description{
-        line-height: 1.6;
-        font-size: 12px;
-    }
+            .B1,
+            .D1a,
+            .D1b,
+            .D1c,
+            .D1d,
+            .E1 {
+                width: 100%;
+            }
 
-    .A2 {
-        font-size: 13px;
-    }
+            .C1,
+            .C1a {
+                width: 85%;
+            }
 
-    .slider {
-        height: 350px;
-    }
-    .F1{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+            h1 {
+                font-size: 16px;
+                margin-top: 30px;
+            }
 
-@media screen and (min-width: 415px) and (max-width: 768px) {
+            h2 {
+                font-size: 16px;
+            }
 
-    /* MENU */
-    .menu-icon {
-        display: block;
-        font-size: 25px;
-        cursor: pointer;
-    }
+            .description {
+                line-height: 1.6;
+                font-size: 12px;
+            }
 
-    .menu {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
+            .A2 {
+                font-size: 13px;
+            }
 
-    #menu-toggle:checked + .menu-icon + .menu {
-        display: flex;
-    }
+            .slider {
+                height: 350px;
+            }
 
-    /* STRUCTURE TABLETTE */
-    .B, .E2, .C2 {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+            .F1 {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+        }
 
-    .B1, .E1, .C1, .C1a {
-        width: 48%;
-    }
+        @media screen and (min-width: 415px) and (max-width: 768px) {
 
-    .D, .D2 {
-        flex-direction: column;
-        gap: 20px;
-    }
+            /* MENU */
+            .menu-icon {
+                display: block;
+                font-size: 25px;
+                cursor: pointer;
+            }
 
-    .D1a, .D1b, .D1c, .D1d {
-        width: 100%;
-    }
+            .menu {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                display: none;
+            }
 
-    h1 {
-        font-size: 28px;
-        margin-top: 30%;
-    }
+            #menu-toggle:checked+.menu-icon+.menu {
+                display: flex;
+            }
 
-    .slider {
-        height: 450px;
-    }
-}
+            /* STRUCTURE TABLETTE */
+            .B,
+            .E2,
+            .C2 {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
 
-        
+            .B1,
+            .E1,
+            .C1,
+            .C1a {
+                width: 48%;
+            }
+
+            .D,
+            .D2 {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .D1a,
+            .D1b,
+            .D1c,
+            .D1d {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin-top: 30%;
+            }
+
+            .slider {
+                height: 450px;
+            }
+        }
     </style>
 </head>
 
